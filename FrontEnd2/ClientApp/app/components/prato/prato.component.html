@@ -1,0 +1,48 @@
+    <br />
+<fieldset>
+    <legend>Pratos</legend>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="col-xs-12 col-sm-6">
+                            <button class="btn btn-success" [routerLink]="['/formPrato']"><i class="glyphicon glyphicon-plus"></i> Cadastrar novo Prato</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+<table class="table table-striped">
+    <tr>
+        <td></td>
+        <td></td>
+        <td>Restaurante</td>
+        <td>Nome</td>
+        <td>Valor</td>
+    </tr>
+    <tr *ngFor="let prato of pratos">
+        <td><a (click)="delete(prato)"><i class="glyphicon glyphicon-remove text-danger"></i></a></td>
+        <td><a [routerLink]="['/formPrato', prato.id]"><i class="glyphicon glyphicon-pencil"></i></a></td>
+        <td>{{prato.restaurante.nome}}</td>
+        <td>{{prato.nome}}</td>
+        <td>{{prato.valor}}</td>
+    </tr>
+</table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</fieldset>
+
+
+
+

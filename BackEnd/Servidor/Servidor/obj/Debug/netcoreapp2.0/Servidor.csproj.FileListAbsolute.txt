@@ -1,0 +1,11 @@
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\bin\Debug\netcoreapp2.0\Servidor.deps.json
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\bin\Debug\netcoreapp2.0\Servidor.runtimeconfig.json
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\bin\Debug\netcoreapp2.0\Servidor.runtimeconfig.dev.json
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\bin\Debug\netcoreapp2.0\Servidor.dll
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\obj\Debug\netcoreapp2.0\Servidor.csprojResolveAssemblyReference.cache
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\obj\Debug\netcoreapp2.0\Servidor.csproj.CoreCompileInputs.cache
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\obj\Debug\netcoreapp2.0\Servidor.AssemblyInfoInputs.cache
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\obj\Debug\netcoreapp2.0\Servidor.AssemblyInfo.cs
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\bin\Debug\netcoreapp2.0\Servidor.pdb
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\obj\Debug\netcoreapp2.0\Servidor.dll
+E:\Documents\ProjetoRestaurante\BackEnd\Servidor\Servidor\obj\Debug\netcoreapp2.0\Servidor.pdb

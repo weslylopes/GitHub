@@ -1,0 +1,53 @@
+<br />
+
+<fieldset>
+    <legend>Cadastro de Restaurante</legend>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-10">
+                        <h4>{{ formLabel }}</h4>
+                        <hr />
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-xs-12 col-sm-1">Nome:</label>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" type="text" id="nome"
+                                           placeholder="Digite nome do restaurante"
+                                           [(ngModel)]="restaurante.nome" formControlName="nome">
+                                    <div *ngIf="form.get('nome').invalid && (form.get('nome').dirty || form.get('nome').touched)"
+                                         class="alert alert-danger">
+                                        O Nome do Restaurante é Obrigatório!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-footer col-xs-12 col-sm-3">
+                            <button class="btn btn-danger" type="button" (click)="cancel()">
+                                <i class="glyphicon glyphicon-remove-sign"></i> Cancelar
+                            </button>
+                            <button class="btn btn-success" type="submit" (click)="salvar()">
+                                <i class="glyphicon glyphicon-saved"></i> Salvar
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+</fieldset>
+
+
+

@@ -1,0 +1,78 @@
+﻿
+<br />
+<fieldset>
+    <legend>Cadastro de Pratos</legend>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-10">
+                        <h4>{{ formLabel }}</h4>
+                        <hr />
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <label class="control-label col-xs-12 col-sm-2">Restaurante:</label>
+                                <div class="col-xs-12 col-sm-6">
+                                    <select class="form-control" formControlName="rest" [(ngModel)]="prato.restauranteId">
+                                        <option *ngFor="let resta of restaurantes" [ngValue]="resta.id">
+                                            {{resta.nome}}
+                                        </option>
+                                    </select>
+                                    <div *ngIf="form.get('rest').invalid && (form.get('rest').dirty || form.get('rest').touched)"
+                                         class="alert alert-danger">
+                                        Selecione um Restaurante!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-12 col-sm-2">Nome:</label>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" type="text" id="nome"
+                                           [(ngModel)]="prato.nome" formControlName="nome">
+                                    <div *ngIf="form.get('nome').invalid && (form.get('nome').dirty || form.get('nome').touched)"
+                                         class="alert alert-danger">
+                                        O Nome do Prato é Obrigatório!
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-xs-12 col-sm-2">Preço:</label>
+                                <div class="col-xs-12 col-sm-6">
+                                    <input class="form-control" type="number" id="valor" 
+                                           [(ngModel)]="prato.valor" formControlName="valor">
+                                    <div *ngIf="form.get('valor').invalid && (form.get('valor').dirty || form.get('valor').touched)"
+                                         class="alert alert-danger">
+                                        O Valor do Prato é Obrigatório!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-footer col-xs-12 col-sm-3">
+
+                        <button class="btn btn-danger" type="button" (click)="cancel()">
+                            <i class="glyphicon glyphicon-remove-sign"></i> Cancelar
+                        </button>
+                        <button type="submit" class="btn btn-success" (click)="salvar()">
+                            <i class="glyphicon glyphicon-saved"></i> Salvar
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </form>
+
+</fieldset>
+
+
+
